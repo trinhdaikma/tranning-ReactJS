@@ -1,0 +1,14 @@
+.PreSlider_wrappwer{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  padding: 10px;
+  background-color: rgba(219, 219, 219, 0.568);
+  border-radius: 50%;
+  transform: translateY(-50%);
+
+  .icon_pre{
+    color: #FFFFFF;
+    font-size: 30px;
+  }
+}

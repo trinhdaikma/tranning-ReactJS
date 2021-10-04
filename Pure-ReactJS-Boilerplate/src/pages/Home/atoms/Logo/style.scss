@@ -1,0 +1,10 @@
+.Logo_wrapper{
+  padding: 0 24px;
+  cursor: pointer;
+
+  .logo_img{
+    flex-shrink: 0;
+    width: 130px;
+    height: 60px;
+  }
+}

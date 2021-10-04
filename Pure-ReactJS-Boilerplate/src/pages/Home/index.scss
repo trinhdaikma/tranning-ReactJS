@@ -1,0 +1,11 @@
+.Home_wrapper{
+  display: grid;
+  grid-gap: 0.2rem;
+  grid-template-areas:
+    "NavBar Header Header Header Header Header"
+    "NavBar Content Content Content Content Content"
+    "PlayerMusic PlayerMusic PlayerMusic PlayerMusic PlayerMusic PlayerMusic";
+  grid-template-rows: 0.5fr 3fr 0.8fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100vh;
+}

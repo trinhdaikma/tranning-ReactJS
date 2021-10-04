@@ -1,0 +1,11 @@
+.Content_wrapper{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  grid-area: Content;
+  width: calc(100% - 240px);
+  padding: 90px 40px;
+  color: #FFFFFF;
+  background-color: #170F23;
+}

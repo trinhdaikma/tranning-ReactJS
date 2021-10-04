@@ -1,0 +1,12 @@
+.HeaderBtnSearch_wrapper{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+
+  .icon_search{
+    color: #C0BFC2;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
