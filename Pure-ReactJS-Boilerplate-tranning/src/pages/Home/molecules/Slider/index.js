@@ -14,12 +14,12 @@ function Slider() {
     {
       id: 2,
       image:
-        "https://photo-zmp3.zadn.vn/banner/d/0/0/a/d00ab9e6422e696412f49bba128c8d3d.jpg"
+        "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/c/b/b/d/cbbdfde4559acd3951a894648f543cd0.jpg"
     },
     {
       id: 3,
       image:
-        "https://photo-zmp3.zadn.vn/banner/d/0/0/a/d00ab9e6422e696412f49bba128c8d3d.jpg"
+        "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/2/8/2/b/282bb538713d645ce39769529c62f845.jpg"
     }
   ];
   const elmImage = images.map(image => (

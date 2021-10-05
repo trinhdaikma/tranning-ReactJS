@@ -1,12 +1,15 @@
 import React from "react";
-import ListSong from "../../molecules/ListSong";
 import Slider from "../../molecules/Slider";
+import PlayListSong from "../PlayListSong";
 import "./style.scss";
 
 function Content() {
   return (
     <div className="Content_wrapper">
       <Slider />
+      <PlayListSong />
+      <PlayListSong />
+      <PlayListSong />
     </div>
   );
 }

@@ -2,8 +2,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
-  grid-area: Content;
+  z-index: -1;
   width: calc(100% - 240px);
   padding: 90px 40px;
   color: #FFFFFF;

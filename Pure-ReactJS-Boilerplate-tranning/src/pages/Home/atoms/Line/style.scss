@@ -1,0 +1,13 @@
+.Line_wrapper{
+  position: relative;
+  height: 1px;
+}
+
+.Line_wrapper::after{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  left: 25px;
+  border-top: 1px solid #3A3344;
+  content: "";
+}
