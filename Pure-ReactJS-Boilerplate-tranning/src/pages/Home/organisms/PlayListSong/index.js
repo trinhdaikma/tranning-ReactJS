@@ -3,10 +3,10 @@ import ListTitle from "../../atoms/ListTitle";
 import ListSong from "../ListSong";
 import "./style.scss";
 
-function PlayListSong() {
+function PlayListSong(props) {
   return (
     <div className="PlayListSong_wrapper">
-      <ListTitle />
+      <ListTitle title={props.title} />
       <ListSong />
     </div>
   );

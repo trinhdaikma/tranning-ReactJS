@@ -1,10 +1,9 @@
 .Content_wrapper{
   position: absolute;
-  top: 0;
+  top: 90px;
   right: 0;
-  z-index: -1;
+  bottom: 90px;
+  display: block;
   width: calc(100% - 240px);
-  padding: 90px 40px;
-  color: #FFFFFF;
   background-color: #170F23;
 }

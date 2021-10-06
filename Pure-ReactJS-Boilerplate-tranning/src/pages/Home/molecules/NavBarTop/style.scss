@@ -1,10 +1,10 @@
-.NavBarTop_wrapper{
+.navbar_item{
   display: flex;
   align-items: center;
   padding: 10px 24px;
   cursor: pointer;
 }
 
-.NavBarTop_wrapper:hover{
+.navbar_item:hover{
   background-color: #393243;
 }

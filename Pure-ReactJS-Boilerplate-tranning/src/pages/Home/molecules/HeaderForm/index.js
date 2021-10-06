@@ -4,9 +4,12 @@ import HeaderInput from "../../atoms/HeaderInput";
 import "./style.scss";
 
 function HeaderForm() {
+  const handleSubmit = event => {
+    event.preventDefault();
+  };
   return (
     <div className="HeaderForm_wrapper">
-      <form>
+      <form onSubmit={handleSubmit}>
         <HeaderInput />
         <HeaderBtnSearch />
       </form>

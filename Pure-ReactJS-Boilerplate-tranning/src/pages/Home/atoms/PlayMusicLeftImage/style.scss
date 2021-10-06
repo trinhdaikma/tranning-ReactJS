@@ -1,0 +1,36 @@
+.PlayMusicLeftImage_wrapper{
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  padding: 2px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: spin 6s linear infinite;
+
+  .music_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+@-webkit-keyframes spin{
+  100%{
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin{
+  100%{
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin{
+  100%{
+    -webkit-transform: rotate(360deg);
+  }
+}

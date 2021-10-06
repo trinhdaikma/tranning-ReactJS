@@ -5,6 +5,7 @@ import HeaderForm from "../HeaderForm";
 import "./style.scss";
 
 function HeaderLeft() {
+
   return (
     <div className="HeaderLeft_wrapper">
       <HeaderArrowLeft />

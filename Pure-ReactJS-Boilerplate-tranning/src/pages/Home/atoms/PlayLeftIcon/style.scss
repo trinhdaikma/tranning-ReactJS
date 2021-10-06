@@ -1,0 +1,21 @@
+.PlayLeftIcon_wrapper{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+
+  .icon_heart{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #FFFFFF;
+    font-size: 16px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.PlayLeftIcon_wrapper:hover{
+  background-color: #6C6973;
+}

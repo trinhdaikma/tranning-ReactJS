@@ -5,10 +5,12 @@ import NavBarItemTitle from "../../atoms/NavBarItemTitle";
 
 function NavBarTop(props) {
   return (
-    <div className="NavBarTop_wrapper">
-      <NavBarItemIcon icon={props.icon} />
-      <NavBarItemTitle title={props.title} />
-    </div>
+    <ul className="NavBarTop_wrapper">
+      <li className="navbar_item">
+        <NavBarItemIcon icon={props.icon} />
+        <NavBarItemTitle title={props.title} />
+      </li>
+    </ul>
   );
 }
 

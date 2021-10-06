@@ -1,15 +1,11 @@
 import React from "react";
-import Slider from "../../molecules/Slider";
-import PlayListSong from "../PlayListSong";
+import ContentMain from "../ContentMain";
 import "./style.scss";
 
 function Content() {
   return (
     <div className="Content_wrapper">
-      <Slider />
-      <PlayListSong />
-      <PlayListSong />
-      <PlayListSong />
+      <ContentMain />
     </div>
   );
 }

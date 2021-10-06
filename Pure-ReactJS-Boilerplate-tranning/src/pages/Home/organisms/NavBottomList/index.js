@@ -31,27 +31,27 @@ function NavBottomList() {
       title: "Bài hát"
     },
     {
-      id: 5,
+      id: 6,
       icon: "icon_bottom fas fa-icons",
       title: "Tổng hợp"
     },
     {
-      id: 6,
+      id: 7,
       icon: "icon_bottom fas fa-icons",
       title: "Gần đây"
     },
     {
-      id: 7,
+      id: 8,
       icon: "icon_bottom fas fa-icons",
       title: "Playsist"
     },
     {
-      id: 8,
+      id: 9,
       icon: "icon_bottom fas fa-icons",
       title: "Yêu thích"
     },
     {
-      id: 9,
+      id: 10,
       icon: "icon_bottom fas fa-icons",
       title: "Theo dõi"
     }

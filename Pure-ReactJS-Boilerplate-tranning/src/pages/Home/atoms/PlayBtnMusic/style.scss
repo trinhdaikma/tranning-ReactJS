@@ -1,0 +1,16 @@
+.PlayBtnMusic_wrapper{
+  margin: 8px 12px;
+  cursor: pointer;
+
+  .icon_music{
+    color: #FFFFFF;
+    font-size: 35px;
+    transition: 0.3s;
+  }
+}
+
+.PlayBtnMusic_wrapper:hover{
+  .icon_music{
+    color: #7200A1;
+  }
+}

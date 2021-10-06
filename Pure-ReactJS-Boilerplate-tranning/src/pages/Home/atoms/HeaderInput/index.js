@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./style.scss";
 
 function HeaderInput() {
-  const [textSearch, setTextSearch] = useState("");
+  const [value, setValue] = useState("");
 
-  const handleChange = event => {
-    setTextSearch(event.target.value);
+  const handleValueChange = event => {
+    setValue(event.target.value);
   };
   return (
     <div className="HeaderInput_wrapper">
@@ -13,8 +13,8 @@ function HeaderInput() {
         className="search_input"
         type="text"
         placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV..."
-        value={textSearch}
-        onChange={event => handleChange(event)}
+        value={value}
+        onChange={handleValueChange}
       />
     </div>
   );

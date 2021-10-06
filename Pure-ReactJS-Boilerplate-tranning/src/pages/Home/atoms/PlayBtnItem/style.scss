@@ -1,0 +1,24 @@
+.PlayBtnItem_wrapper{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 8px 8px;
+  padding: 8px;
+  list-style: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+
+  .icon_play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #FFFFFF;
+    font-size: 16px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.PlayBtnItem_wrapper:hover{
+  background-color: rgb(95, 92, 92);
+}
