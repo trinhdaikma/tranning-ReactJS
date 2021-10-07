@@ -1,35 +1,57 @@
 import React from "react";
-import NextSiler from "../../atoms/NextSlider";
-import PreSiler from "../../atoms/PreSlider";
-import SliderImage from "../../atoms/SliderImage";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css";
+import "swiper/components/navigation/navigation.min.css";
 import "./style.scss";
+import SwiperCore, {
+  Autoplay,
+  // EffectCoverflow,
+  Pagination,
+  Navigation
+} from "swiper/core";
 
+SwiperCore.use([Autoplay, Pagination, Navigation]);
 function Slider() {
-  const images = [
-    {
-      id: 1,
-      image:
-        "https://photo-zmp3.zadn.vn/banner/d/0/0/a/d00ab9e6422e696412f49bba128c8d3d.jpg"
-    },
-    {
-      id: 2,
-      image:
-        "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/c/b/b/d/cbbdfde4559acd3951a894648f543cd0.jpg"
-    },
-    {
-      id: 3,
-      image:
-        "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/2/8/2/b/282bb538713d645ce39769529c62f845.jpg"
-    }
-  ];
-  const elmImage = images.map(image => (
-    <SliderImage key={image.id} image={image.image} />
-  ));
   return (
     <div className="Slider_wrapper">
-      <PreSiler />
-      {elmImage}
-      <NextSiler />
+      <Swiper
+        centeredSlides
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false
+        }}
+        slidesPerView={3}
+        spaceBetween={30}
+        slidesPerGroup={3}
+        loop
+        loopFillGroupWithBlank
+        navigation
+        className="swiper"
+      >
+        <SwiperSlide>
+          <img
+            src="https://photo-zmp3.zadn.vn/banner/2/f/4/4/2f44754725fc1efce79d226a8970e16b.jpg"
+            alt=""
+            className="slider_img"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://photo-zmp3.zadn.vn/banner/d/0/b/c/d0bcd26f15d489fb47f86ea33a8764c8.jpg"
+            alt=""
+            className="slider_img"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://photo-zmp3.zadn.vn/banner/b/5/c/c/b5cccd621149341f856aa2c306d82ab3.jpg"
+            alt=""
+            className="slider_img"
+          />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }

@@ -1,12 +1,12 @@
 import React from "react";
-import ListTitle from "../../atoms/ListTitle";
+import ListSongTop from "../../molecules/ListSongTop";
 import ListSong from "../ListSong";
 import "./style.scss";
 
-function PlayListSong(props) {
+function PlayListSong() {
   return (
     <div className="PlayListSong_wrapper">
-      <ListTitle title={props.title} />
+      <ListSongTop />
       <ListSong />
     </div>
   );
