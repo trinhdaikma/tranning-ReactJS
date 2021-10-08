@@ -1,9 +1,10 @@
 import React from "react";
-import Slider from "../../molecules/Slider";
+import Slider from "../Slider";
 import PlayListSong from "../PlayListSong";
 // import PlayListSong from "../PlayListSong";
 
 import "./style.scss";
+import ContentSingerList from "../ContentSingerList";
 
 function ContentMain() {
   return (
@@ -11,6 +12,7 @@ function ContentMain() {
       <Slider />
       <PlayListSong />
       <PlayListSong />
+      <ContentSingerList />
       <PlayListSong />
     </div>
   );

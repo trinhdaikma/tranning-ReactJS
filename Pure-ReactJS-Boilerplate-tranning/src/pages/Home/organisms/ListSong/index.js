@@ -16,7 +16,7 @@ function ListSong() {
       image:
         "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/6/8/4/5/6845d09bb066daaec232cecd6a037c7a.jpg",
       title: "Nhạc Hot",
-      singer: "Erik, Đức Phúc, Hoà Minzy"
+      singer: "Erik, Đức Phúc, Hoà Minzy, Erik, Đức Phúc, Hoà Minzy, Erik, Đức Phúc, Hoà Minzy"
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ function ListSong() {
       image:
         "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/b/e/f/0/bef0285713b3c8c70cc425b6f7df671d.jpg",
       title: "Nhạc V-POP",
-      singer: "Sơn Tùng MTP, Quân A.p"
+      singer: "Sơn Tùng MTP, Quân A.p, Văn Mai Hương"
     }
   ];
 
