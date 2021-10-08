@@ -1,8 +1,6 @@
 import React from "react";
 import Slider from "../Slider";
 import PlayListSong from "../PlayListSong";
-// import PlayListSong from "../PlayListSong";
-
 import "./style.scss";
 import ContentSingerList from "../ContentSingerList";
 
