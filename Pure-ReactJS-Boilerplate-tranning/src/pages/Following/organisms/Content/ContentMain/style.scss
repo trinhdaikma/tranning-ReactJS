@@ -1,0 +1,33 @@
+.ContentMain_wrapper {
+  position: absolute;
+  display: grid;
+  grid-auto-rows: 620px 120px 640px 220px;
+  grid-template-areas:
+    "img1 img2"
+    "img3 img2"
+    "img3 img4"
+    "img5 img4";
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px 30px;
+  overflow: scroll;
+  overflow-x: hidden;
+  inset: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #231B2E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #393243;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #615B69;
+}

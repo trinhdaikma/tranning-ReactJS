@@ -1,0 +1,19 @@
+.IconSetting_wrapper{
+  position: relative;
+  width: 40px;
+  height: 41px;
+  margin-left: 10px;
+  overflow: hidden;
+  background-color: #2F2739;
+  border-radius: 50%;
+  cursor: pointer;
+
+  .icon_search{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #FFFFFF;
+    font-size: 16px;
+    transform: translate(-50%, -50%);
+  }
+}

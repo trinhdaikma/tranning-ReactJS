@@ -1,0 +1,13 @@
+$backgroundColor: #170F23;
+
+.Following_wrapper{
+  display: grid;
+  grid-template-areas:
+    "left header right"
+    "left content right"
+    "footer footer footer";
+  grid-template-rows: 80px calc(100% - 80px - 90px) 90px;
+  grid-template-columns: 240px calc(100% - 318px - 240px) 318px;
+  width: 100%;
+  height: 100vh;
+}
