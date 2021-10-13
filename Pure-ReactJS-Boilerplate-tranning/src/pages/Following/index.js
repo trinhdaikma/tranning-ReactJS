@@ -4,16 +4,18 @@ import Footer from "./organisms/Footer";
 import Header from "./organisms/Header";
 import NavBarLeft from "./organisms/NavBarLeft";
 import NavBarRight from "./organisms/NavBarRight";
-import "./style.scss"
+import "./style.scss";
 
 function Following() {
-  return <div className="Following_wrapper">
-  <Header />
-  <NavBarLeft />
-  <Content />
-  <NavBarRight />
-  <Footer />
-  </div>;
+  return (
+    <div className="Following_wrapper">
+      <Header />
+      <NavBarLeft />
+      <Content />
+      <NavBarRight />
+      <Footer />
+    </div>
+  );
 }
 
 export default Following;

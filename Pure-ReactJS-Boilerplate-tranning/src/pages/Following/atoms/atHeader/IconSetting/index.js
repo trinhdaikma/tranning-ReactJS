@@ -1,10 +1,9 @@
-import React from "react";
 import "./style.scss"
 
 function IconSetting() {
   return (
     <div className="IconSetting_wrapper">
-      <i className="icon_search fas fa-cog"></i>
+      <i className="icon_setting fas fa-cog"></i>
     </div>
   );
 }

@@ -1,17 +1,17 @@
 import React from "react";
-import Content from "./organisms/Content";
-import Header from "./organisms/Header";
-import NavBar from "./organisms/NavBar";
-import PlayerMusic from "./organisms/PlayerMusic";
+import Footer from "../Following/organisms/Footer";
+import Header from "../Following/organisms/Header";
+import NavBarLeft from "../Following/organisms/NavBarLeft";
 import "./index.scss";
+import Content from "./organisms/Content";
 
 function Home() {
   return (
     <div className="Home_wrapper">
       <Header />
-      <NavBar />
+      <NavBarLeft />
       <Content />
-      <PlayerMusic />
+      <Footer />
     </div>
   );
 }

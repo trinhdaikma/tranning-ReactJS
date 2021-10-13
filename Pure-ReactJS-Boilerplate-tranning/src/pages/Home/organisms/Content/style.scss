@@ -1,9 +1,4 @@
 .Content_wrapper{
-  position: absolute;
-  top: 90px;
-  right: 0;
-  bottom: 90px;
-  display: block;
-  width: calc(100% - 240px);
+  grid-area: content;
   background-color: #170F23;
 }

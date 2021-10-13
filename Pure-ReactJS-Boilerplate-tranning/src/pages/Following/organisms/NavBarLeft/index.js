@@ -1,8 +1,7 @@
-import React from "react";
+import NewListAdd from "../../atoms/atNavBarLeft/AddNewList";
 import Logo from "../../atoms/atNavBarLeft/Logo";
-import NewListAdd from "../../molecules/mcNavBarLeft/AddNewList";
-import NavList from "./NavList";
-import NavScroll from "./NavScroll";
+import NavList from "../../molecules/mcNavBarLeft/NavList";
+import NavScroll from "../../molecules/mcNavBarLeft/NavScroll";
 import "./style.scss";
 
 function NavBarLeft() {

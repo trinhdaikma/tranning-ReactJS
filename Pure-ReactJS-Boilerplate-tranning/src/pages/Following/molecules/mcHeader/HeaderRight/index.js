@@ -1,8 +1,7 @@
-import React from "react";
+import Avatar from "../../../atoms/atHeader/Avatar";
+import IconSetting from "../../../atoms/atHeader/IconSetting";
 import IconSubject from "../../../atoms/atHeader/IconSubject";
 import IconUpload from "../../../atoms/atHeader/IconUpload";
-import IconSetting from "../../../atoms/atHeader/IconSetting";
-import Avatar from "../../../atoms/atHeader/Avatar";
 import "./style.scss";
 
 function HeaderRight() {

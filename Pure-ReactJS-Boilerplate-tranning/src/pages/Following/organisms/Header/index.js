@@ -1,6 +1,6 @@
 import React from "react";
-import HeaderLeft from "../../molecules/mcHeader/HeaderLeft";
-import HeaderForm from "../../molecules/mcHeader/HeaderForm";
+import HeaderLeft from "../../atoms/atHeader/HeaderLeft";
+import HeaderForm from "../../atoms/atHeader/HeaderForm";
 import HeaderRight from "../../molecules/mcHeader/HeaderRight";
 
 import "./style.scss";
