@@ -1,35 +1,54 @@
-// others
+import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from "firebase/app";
+import * as firestore from "firebase/firestore/lite";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
-import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs } from "firebase/firestore/lite";
 import CaNhan from "./pages/CaNhan";
 import Following from "./pages/Following";
 import Home from "./pages/Home";
 import Radio from "./pages/Radio";
 import ZingChart from "./pages/ZingChart";
 
-// Follow this pattern to import other Firebase services
-// import { } from 'firebase/<service>';
-
-// TODO: Replace the following with your app's Firebase project configuration
+const { getFirestore, collection, addDoc, doc, setDoc, getDocs } = firestore;
 const firebaseConfig = {
   apiKey: "AIzaSyB4SxI045O9N2bwW-cC-zjMzHebpXjpxAI",
   authDomain: "tranning-reactjs.firebaseapp.com",
-  projectId: "tranning-reactjs"
+  databaseURL: "https://tranning-reactjs-default-rtdb.firebaseio.com",
+  projectId: "tranning-reactjs",
+  storageBucket: "tranning-reactjs.appspot.com",
+  messagingSenderId: "713942844357",
+  appId: "1:713942844357:web:8880de63e832593c0101ac",
+  measurementId: "G-X6R261JGGC"
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
-// Get a list of cities from your database
-async function getCities(db) {
-  const citiesCol = collection(db, "cities");
-  const citySnapshot = await getDocs(citiesCol);
-  const cityList = citySnapshot.docs.map(doc => doc.data());
-  return cityList;
+// Initialize Firebase
+const firebase = initializeApp(firebaseConfig);
+const db = getFirestore(firebase);
+async function getData() {
+  const citiescol = collection(db, "songImformation");
+  const citynapshot = await setDoc(doc(db, ""), citiescol);
+  const citiList = citynapshot.docs.map(doc => doc.data());
+  return citiList;
 }
 
+async function setData() {
+  setDoc(doc(db, "songImformation", "list-song"), {
+    id: 1,
+    image: "",
+    songName: "yêu là cưới",
+    singer: "Phát Hồ"
+  });
+}
+async function setData2() {
+  setDoc(doc(db, "songImformation-2", "list-2"), {
+    id: 2,
+    image: "",
+    songName: "yêu là cưới",
+    singer: "Phát Hồ"
+  });
+}
+setData();
+setData2();
 function App() {
   return (
     <div className="App">

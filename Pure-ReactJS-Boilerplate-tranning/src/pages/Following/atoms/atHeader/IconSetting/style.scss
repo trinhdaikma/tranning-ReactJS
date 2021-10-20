@@ -19,3 +19,43 @@
     cursor: pointer;
   }
 }
+
+.setting-toggle{
+  position: absolute;
+  top: 100%;
+  right: 68px;
+  z-index: 9;
+  width: 230px;
+  padding: 10px 0;
+  background-color: #231B2E;
+  border-radius: 8px;
+  visibility: visible;
+  opacity: 0;
+
+  .list-item{
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    color: #BEBDBD;
+    cursor: pointer;
+
+    .icon-togle{
+      margin-right: 8px;
+      font-size: 18px;
+    }
+
+    p{
+      font-size: 14px;
+    }
+  }
+
+  .list-item:hover{
+    color: #FFFFFF;
+    background-color: #ADABAB;
+  }
+}
+
+.setting-toggle.active{
+  visibility: visible;
+  opacity: 1;
+}

@@ -87,3 +87,36 @@ export const rightIcons = [
     cName: "right-icon"
   }
 ];
+
+export const settigTogle = [
+  {
+    id: 1,
+    icon: <i className="icon-togle fas fa-ban"></i>,
+    title: "Danh Sách phát nhạc"
+  },
+  {
+    id: 2,
+    icon: <i className="icon-togle fab fa-phoenix-squadron"></i>,
+    title: "Chất lượng HD"
+  },
+  {
+    id: 3,
+    icon: <i className="icon-togle far fa-play-circle"></i>,
+    title: "Trình phát nhạc"
+  },
+  {
+    id: 4,
+    icon: <i className="icon-togle fas fa-exclamation-circle"></i>,
+    title: "Giới thiệu"
+  },
+  {
+    id: 5,
+    icon: <i className="icon-togle fas fa-ban"></i>,
+    title: "Góp ý"
+  },
+  {
+    id: 6,
+    icon: <i className="icon-togle fas fa-ban"></i>,
+    title: "Liên hệ"
+  }
+];
